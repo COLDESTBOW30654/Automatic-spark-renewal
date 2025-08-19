@@ -24,7 +24,7 @@ JavaScript
 
 3. 设置autojs权限，下图圈出了该脚本所需的权限
 
-   ![photo](C:\Users\Administrator\Desktop\Automatic-spark-renewal\photo.png)
+   ![photo](.\photo.png)
 
 4. 选择合适的脚本复制到你的autojs下
 
