@@ -10,9 +10,9 @@ readme文档编写时间：2025年8月19日21点10分
 
 #### 介绍
 
-###### 本二改版本的熄屏方式采用模拟电源按键熄屏，由于安卓内部的安全限制，需要使用shizuku给予权限，或使用root给予权限，如果你启动了***自动熄屏***，那当我没说，*可忽视*“使用说明第二条“，可不在第三条的图片中打开“shizuku权限”
+bilibili视频介绍：[基于CV技术编写的快手自动续火花脚本](https://www.bilibili.com/video/BV11beMzNEgS)
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&115059841899959&bvid=BV11beMzNEgS&cid=25845568834&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+###### 本二改版本的熄屏方式采用模拟电源按键熄屏，由于安卓内部的安全限制，需要使用shizuku给予权限，或使用root给予权限，如果你启动了***自动熄屏***，那当我没说，*可忽视*“使用说明第二条“，可不在第三条的图片中打开“shizuku权限”
 
 #### 软件架构：
 
