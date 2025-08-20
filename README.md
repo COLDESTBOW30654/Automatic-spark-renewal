@@ -16,15 +16,15 @@ bilibili视频介绍：[基于CV技术编写的快手自动续火花脚本](http
 
 #### 软件架构：
 
-AutoJS6
+[AutoJs6](https://github.com/SuperMonster003/AutoJs6)
 
 JavaScript
 
 #### 使用说明：
 
-1. 安装AutoJS6 [Releases · SuperMonster003/AutoJs6](https://github.com/SuperMonster003/AutoJs6/releases)
+1. 安装AutoJS6 [点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
 
-2. 安装shizuku[Releases · RikkaApps/Shizuku](https://github.com/RikkaApps/Shizuku/releases)并启用，确保Auto.js可以获取shizuku权限，启用教程可以看这位大佬的视频 [安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)
+2. 安装shizuku[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)，并且启用，启用教程可以看这位大佬的视频 [安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)确保Auto.js可以获取shizuku权限
 
 3. 设置autojs权限，下图圈出了该脚本所需的权限
 
