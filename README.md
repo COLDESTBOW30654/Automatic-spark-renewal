@@ -6,7 +6,7 @@ readme文档编写时间：2025年8月19日21点10分
 
 本作品是基于[AutoJS6抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二改制作的快手自动续火花
 
-**原作者bilibili：[LuckyLK-个人主页-哔哩哔哩视频](https://space.bilibili.com/515953193?spm_id_from=333.1007.0.0)**
+原作者bilibili：[LuckyLK-个人主页-哔哩哔哩视频](https://space.bilibili.com/515953193?spm_id_from=333.1007.0.0)
 
 #### 介绍
 
