@@ -10,7 +10,7 @@ readme文档编写时间：2025年8月19日21点10分
 
 #### 介绍
 
-bilibili视频介绍：[基于CV技术编写的快手自动续火花脚本](https://www.bilibili.com/video/BV11beMzNEgS)
+bilibili视频介绍：[快手自动续火花脚本-介绍](https://www.bilibili.com/video/BV11beMzNEgS)
 
 ###### 本二改版本的熄屏方式采用模拟电源按键熄屏，由于安卓内部的安全限制，需要使用shizuku给予权限，或使用root给予权限，如果你启动了***自动熄屏***，那当我没说，*可忽视*“使用说明第二条“，可不在第三条的图片中打开“shizuku权限”
 
@@ -22,7 +22,7 @@ JavaScript
 
 #### 使用说明：
 
-1. 安装AutoJS6 [点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
+1. 安装AutoJS6[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
 
 2. 安装shizuku[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)，并且启用，启用教程可以看这位大佬的视频 [安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)确保Auto.js可以获取shizuku权限
 
@@ -35,6 +35,10 @@ JavaScript
 5. 填写需要填写的内容，例如好友昵称，锁屏密码
 
 6. 运行脚本
+
+   **如果以上教程看不懂可以看视频版**
+
+   [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	[快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 
 #### 脚本所需权限
 
@@ -93,8 +97,10 @@ A: 暂未测试
 
 Q: 脚本发送的内容可以自定义吗？
 
-A: 目前暂未开放
-
+A: 这里修改发送的第一句![code-1](code-1.png)
+   这里修改发送的一言，删除后不会输出一言，但还会发送原始变量![code-2](code-2.png)
+   删除这里彻底关闭一言![code-3](code-3.png)
+   删除这里关闭续火花时长告知对方![code-4](code-4.png)
 Q: 如何知道我手机点击位置的坐标？
 
 A: 开发者模式，打开显示坐标功能，具体步骤可以自己查询。
