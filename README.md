@@ -35,8 +35,8 @@ JavaScript
 5. 填写需要填写的内容，例如好友昵称，锁屏密码
 
 6. 运行脚本
-
    **如果以上教程看不懂可以看视频版**
+
 [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	     
 [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 
