@@ -1,6 +1,6 @@
 # AutoJS6快手自动续火花
 
-readme文档编写时间：2025年8月19日21点10分
+readme文档编写时间：2025年8月22日23点10分
 
 #### 前言
 
@@ -38,7 +38,7 @@ JavaScript
 
    **如果以上教程看不懂可以看视频版**
 
-   [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	[快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
+   [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	     [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 
 #### 脚本所需权限
 
@@ -62,7 +62,7 @@ JavaScript
 
 9. 修改系统设置
 
-***其他非系统权限***(二选一)
+***其他非系统权限***(二选一，需要根据你实际个人情况和，选择的脚本版本来选择，如果你选择自动熄屏可都不选)
 
 1. shizuku权限
 2. Root权限
@@ -112,6 +112,7 @@ A: 这里修改发送的第一句
    删除这里关闭续火花时长告知对方
    
    ![code-4](code-4.png)
+
 Q: 如何知道我手机点击位置的坐标？
 
 A: 开发者模式，打开显示坐标功能，具体步骤可以自己查询。
