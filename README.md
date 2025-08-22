@@ -24,7 +24,7 @@ JavaScript
 
 1. 安装AutoJS6[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
 
-2. 安装shizuku(注意这个要根据你个人的手机情况而定Root用户可跳过这一步，其他用户建议根据后面的提示来酌情考虑)[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)，并且启用，启用教程可以看这位大佬的视频 [安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)确保Auto.js可以获取shizuku权限
+2. 安装shizuku[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)(注意这个要根据你个人的手机情况而定Root用户可跳过这一步，其他用户建议根据后面的提示来酌情考虑)并且启用，启用教程可以看这位大佬的视频 [安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)确保Auto.js可以获取shizuku权限
 
 3. 设置autojs权限，下图圈出了该脚本所需的权限
 
