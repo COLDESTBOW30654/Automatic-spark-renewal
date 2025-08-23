@@ -9,6 +9,7 @@
 #### 准备工作
 
 - 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
+- 复制Root版脚本：[点此跳转Root版脚本](快手自动续火花脚本-Root.js)
 
 #### 步骤一：安装AutoJS6
 - 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases) 
