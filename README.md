@@ -1,18 +1,18 @@
 # AutoJS6快手自动续火花
 
-readme文档编写时间：2025年8月22日23点28分
+readme文档编写时间：2025年8月23日13点00分
 
 #### 前言
 
 本作品是基于[AutoJS6抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二改制作的快手自动续火花
 
-原作者bilibili：[LuckyLK-个人主页-哔哩哔哩视频](https://space.bilibili.com/515953193?spm_id_from=333.1007.0.0)
+原作者bilibili：[LuckyLK](https://space.bilibili.com/515953193?spm_id_from=333.1007.0.0)
 
 #### 介绍
 
 bilibili视频介绍：[快手自动续火花脚本-介绍](https://www.bilibili.com/video/BV11beMzNEgS)
 
-###### 本二改版本的熄屏方式采用模拟电源按键熄屏，由于安卓内部的安全限制，需要使用shizuku给予权限，或使用root给予权限，如果你启动了***自动熄屏***并且时间很短，那当我没说，*可忽视*“使用说明第二条“，可不在第三条的图片中打开“shizuku权限”
+###### 本二改版本的熄屏方式采用模拟电源按键熄屏，由于安卓内部的安全限制，需要使用shizuku给予权限，或使用root给予权限，如果你启动了 ***自动熄屏*** 并且时间很短，那当我没说，*可忽略* “使用说明第二条“，可不在第三条的图片中打开“shizuku权限”
 
 #### 软件架构：
 
@@ -22,24 +22,15 @@ JavaScript
 
 #### 使用说明：
 
-1. 安装AutoJS6[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
+**您可以访问每个版本专属的文字版教程**
 
-2. 安装shizuku[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)，并且启用，启用教程可以看这位大佬的视频 [安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)确保Auto.js可以获取shizuku权限(注意这个要根据你个人的手机情况而定，Root用户可跳过这一步，其他用户建议根据后面的提示来酌情考虑)
+[快手自动续火花脚本-shizuku(文字版教程)](Document-shizuku.md)
+[快手自动续火花脚本-Root(文字版教程)](Document-Root.md)   
 
-3. 设置autojs权限，下图圈出了该脚本所需的权限
+**如果以上文字版教程看不懂可以看视频版**
 
-   ![photo](photo.png)
-
-4. 选择合适的脚本复制到你的autojs下
-
-5. 填写需要填写的内容，例如好友昵称，锁屏密码
-
-6. 运行脚本
-
-**如果以上教程看不懂可以看视频版**
-
-[快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	     
 [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
+[快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	  
 
 #### 脚本所需权限
 
@@ -63,10 +54,9 @@ JavaScript
 
 9. 修改系统设置
 
-***其他非系统权限***(二选一，需要根据你实际个人手机情况和选择的脚本版本来选择，如果你手机本身开着自动熄屏且时间很短可都不选)
+***其他非系统权限***(需要根据你实际阅读的文档来判断是否需要给予，如果你手机本身开着自动熄屏且时间很短可不选)
 
-1. shizuku权限
-2. Root权限
+- shizuku权限
 
 #### 下载或复制代码：
 
@@ -81,7 +71,7 @@ JavaScript
 1. 如果你不需要使用密码打开手机，而是直接滑动解锁，请删除红色方框内的代码![code](code.png)
 2. 请勿同时运行多个重复脚本
 3. 脚本运行过程中请勿进行任何操作
-4. **测试使用版本**： autojs版本6.6.4   快手版本13.7.30.10493
+4. **测试使用版本**： autojs版本(6.6.4)   快手版本(13.7.30.10493)
 5. 若新版本的脚本使用有问题，例如通过按钮名称自动寻找按钮位置点击无法生效，请尝试修改部分点击坐标的位置
 6. 需将发送消息的方式修改为发送按键
 7. 确保给予shizuku或Root权限
@@ -98,21 +88,27 @@ A: 暂未测试
 
 Q: 脚本发送的内容可以自定义吗？
 
-A: 这里修改发送的第一句
-   
-   ![code-1](code-1.png)
-   
+A: 你可以根据下列图片来修改部分脚本发送的文本
+
+   这里修改发送的第一句
+
+   ![code-1](photo/code-1.png)
+
+   删除这里关闭自动续火花提示
+
+   ![code-5](photo/code-5.png)
+
    这里修改发送的一言，删除后不会输出一言，但还会发送原始变量
-   
-   ![code-2](code-2.png)
-   
+
+   ![code-2](photo/code-2.png)
+
    删除这里彻底关闭一言
-   
-   ![code-3](code-3.png)
-   
+
+   ![code-3](photo/code-3.png)
+
    删除这里关闭续火花时长告知对方
-   
-   ![code-4](code-4.png)
+
+   ![code-4](photo/code-4.png)
 
 Q: 如何知道我手机点击位置的坐标？
 
