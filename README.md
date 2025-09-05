@@ -1,6 +1,11 @@
 # AutoJS6快手自动续火花
 
-readme文档编写时间：2025年8月24日17点00分
+readme文档编写时间：2025年9月05日20点10分
+
+![GitHub Created At](https://img.shields.io/github/created-at/coldestbow30654/automatic-spark-renewal)   ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/coldestbow30654/automatic-spark-renewal)     ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/coldestbow30654/automatic-spark-renewal)    ![GitHub License](https://img.shields.io/github/license/coldestbow30654/automatic-spark-renewal)   ![GitHub forks](https://img.shields.io/github/forks/coldestbow30654/automatic-spark-renewal)    ![GitHub Repo stars](https://img.shields.io/github/stars/coldestbow30654/automatic-spark-renewal)
+
+
+
 
 #### 前言
 
@@ -21,12 +26,12 @@ JavaScript
 #### 使用说明：
 
 **看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载Autojs6即可**
-[快手自动续火花脚本-懒人版(文字版教程)](Document.md)
+[快手自动续火花脚本-懒人版(文字版教程)](.readme/Document.md)
 
 **您可以访问每个版本专属的文字版教程**
 
-[快手自动续火花脚本-shizuku(文字版教程)](Document-shizuku.md)
-[快手自动续火花脚本-Root(文字版教程)](Document-Root.md)   
+[快手自动续火花脚本-shizuku(文字版教程)](.readme/Document-shizuku.md)
+[快手自动续火花脚本-Root(文字版教程)](.readme/Document-Root.md)   
 
 **如果以上文字版教程看不懂可以看视频版**
 
@@ -63,13 +68,13 @@ JavaScript
 ###### 这里不提供懒人版，懒人版在"懒人版文字教程"提供复制
 两个版本本质上只是模拟熄屏按键的代码不同，也就是最后一行，如只使用无障碍权限授权，且开着手机自动熄屏时长比较短，可复制任意一种版本的代码，删除最后一行
 
-**shizuku版：**[快手自动续火花脚本-shizuku](快手自动续火花脚本-shizuku.js)
+**shizuku版：**[快手自动续火花脚本-shizuku](.code/快手自动续火花脚本-shizuku.js)
 
-**Root版：**[快手自动续火花脚本-Root](快手自动续火花脚本-Root.js)
+**Root版：**[快手自动续火花脚本-Root](.code/快手自动续火花脚本-Root.js)
 
 #### 注意事项：
 
-1. 如果你不需要使用密码打开手机，而是直接滑动解锁，请删除红色方框内的代码![code](photo/code.png)
+1. 如果你不需要使用密码打开手机，而是直接滑动解锁，请删除红色方框内的代码![code](/.photo/code.png)
 2. 请勿同时运行多个重复脚本
 3. 脚本运行过程中请勿进行任何操作
 4. **测试使用版本**： autojs版本[(6.6.4)](https://pan.huang1111.cn/s/byQ1qcY)   快手版本[(13.7.30.43728)](https://pan.huang1111.cn/s/Wz33Pf3)
@@ -93,23 +98,23 @@ A: 你可以根据下列图片来修改部分脚本发送的文本
 
    这里修改发送的第一句
 
-   ![code-1](photo/code-1.png)
+   ![code-1](.photo/code-1.png)
 
    删除这里关闭自动续火花提示
 
-   ![code-5](photo/code-5.png)
+   ![code-5](.photo/code-5.png)
 
    这里修改发送的一言，删除后不会输出一言，但还会发送原始变量
 
-   ![code-2](photo/code-2.png)
+   ![code-2](.photo/code-2.png)
 
    删除这里彻底关闭一言
 
-   ![code-3](photo/code-3.png)
+   ![code-3](.photo/code-3.png)
 
    删除这里关闭续火花时长告知对方
 
-   ![code-4](photo/code-4.png)
+   ![code-4](.photo/code-4.png)
 
 Q: 如何知道我手机点击位置的坐标？
 
