@@ -1,11 +1,20 @@
-# AutoJS6快手自动续火花
+<div align="center">
+  <img src="https://socialify.git.ci/COLDESTBOW30654/Automatic-spark-renewal/image?description=1&font=Inter&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light" alt="Automatic-spark-renewal" width="640" height="320" />
 
-readme文档编写时间：2025年9月05日20点10分
-
-![GitHub Created At](https://img.shields.io/github/created-at/coldestbow30654/automatic-spark-renewal)   ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/coldestbow30654/automatic-spark-renewal)     ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/coldestbow30654/automatic-spark-renewal)    ![GitHub License](https://img.shields.io/github/license/coldestbow30654/automatic-spark-renewal)   ![GitHub forks](https://img.shields.io/github/forks/coldestbow30654/automatic-spark-renewal)    ![GitHub Repo stars](https://img.shields.io/github/stars/coldestbow30654/automatic-spark-renewal)
-
-
-
+  <p>
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues
+    "><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/coldestbow30654/automatic-spark-renewal"/></a>
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/coldestbow30654/automatic-spark-renewal"/></a>
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/commits/main/"><img alt="GitHub Created At" src="https://img.shields.io/github/created-at/coldestbow30654/automatic-spark-renewal
+    "/></a>
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/coldestbow30654/automatic-spark-renewal"/></a>
+    <br>
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/coldestbow30654/automatic-spark-renewal"/></a>
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/forks"><img alt="GitHub forks" src="https://img.shields.io/github/forks/coldestbow30654/automatic-spark-renewal"/></a>
+    <a href='https://gitee.com/coldestbow30654/automatic-spark-renewal/stargazers'><img src='https://gitee.com/coldestbow30654/automatic-spark-renewal/badge/star.svg?theme=white' alt='star'></img></a>
+    <a href='https://gitee.com/coldestbow30654/automatic-spark-renewal/members'><img src='https://gitee.com/coldestbow30654/automatic-spark-renewal/badge/fork.svg?theme=white' alt='fork'></img></a>
+  </p>
+</div>
 
 #### 前言
 
