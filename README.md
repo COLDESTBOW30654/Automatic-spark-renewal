@@ -62,11 +62,11 @@ JavaScript
 
 5. 在GitHub中的项目里提交issue
 
-   [Issues · 白鹿原嚒/automatic-spark-renewal - Gitee.com](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
+   [Issues · COLDESTBOW30654/Automatic-spark-renewal](https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues)
 
 6. 在Gitee中的项目里提交issue
 
-   [Issues · COLDESTBOW30654/Automatic-spark-renewal](https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues)
+   [Issues · 白鹿原嚒/automatic-spark-renewal - Gitee.com](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
 
 7. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
 
