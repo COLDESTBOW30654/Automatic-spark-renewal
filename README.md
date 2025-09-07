@@ -5,7 +5,7 @@
     <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues
     "><img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/coldestbow30654/automatic-spark-renewal"/></a>
     <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues"><img alt="GitHub closed issues" src="https://img.shields.io/github/issues/coldestbow30654/automatic-spark-renewal"/></a>
-    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/commits/main/"><img alt="GitHub Created At" src="https://img.shields.io/github/created-at/coldestbow30654/automatic-spark-renewal
+    <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/commits/main/"><img alt="GitHub Created At" src="https://img.shields.io/github/created-at/coldestbow30654/Automatic-spark-renewal
     "/></a>
     <a href="https://github.com/COLDESTBOW30654/Automatic-spark-renewal/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/coldestbow30654/automatic-spark-renewal"/></a>
     <br>
