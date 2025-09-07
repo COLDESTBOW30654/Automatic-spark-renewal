@@ -36,12 +36,12 @@ JavaScript
 
 **看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载Autojs6即可**
 
-[快手自动续火花脚本-懒人版(文字版教程)](.readme/Document.md)
+[快手自动续火花脚本-懒人版(文字版教程)](.document/Document-Lazy.md)
 
 **您可以访问每个版本专属的文字版教程**
 
-[快手自动续火花脚本-shizuku(文字版教程)](.readme/Document-shizuku.md)
-[快手自动续火花脚本-Root(文字版教程)](.readme/Document-Root.md)   
+[快手自动续火花脚本-shizuku(文字版教程)](.document/Document-shizuku.md)
+[快手自动续火花脚本-Root(文字版教程)](.document/Document-Root.md)   
 
 **如果以上文字版教程看不懂可以看视频版**
 
