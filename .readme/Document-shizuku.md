@@ -10,7 +10,7 @@
 
 - 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
 - 下载并安装shizuku：[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)
-- 复制shizuku版脚本：[点此跳转shizuku脚本](.code/快手自动续火花脚本-shizuku.js) 
+- 复制shizuku版脚本：[点此跳转shizuku脚本](/.code/快手自动续火花脚本-shizuku.js) 
 
 #### 步骤一：安装AutoJS6
 1. 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases) 
