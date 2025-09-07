@@ -16,13 +16,13 @@
   </p>
 </div>
 
-#### 前言
+#### 前言:
 
 本作品是基于[AutoJS6抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二改制作的快手自动续火花
 
 灵感来源：[LuckyLK](https://www.bilibili.com/video/BV1zb3xzUEXj)
 
-#### 介绍
+#### 介绍:
 
 bilibili视频介绍：[快手自动续火花脚本-介绍](https://www.bilibili.com/video/BV11beMzNEgS)
 
@@ -48,7 +48,38 @@ JavaScript
 [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)	  
 
-#### 脚本所需权限
+#### 问题反馈:
+
+**如果你遇到脚本运行时产生的问题可以在以下提到的方式向我反馈**
+
+1. 在快手平台向我提交私信
+
+2. 在快手平台中我的相关视频评论
+
+3. 在哔哩哔哩平台向我提交私信
+
+4. 在哔哩哔哩平台中我的相关视频评论
+
+5. 在GitHub中的项目里提交issue
+
+   [Issues · 白鹿原嚒/automatic-spark-renewal - Gitee.com](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
+
+6. 在Gitee中的项目里提交issue
+
+   [Issues · COLDESTBOW30654/Automatic-spark-renewal](https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues)
+
+7. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
+
+###### 在反馈时可以使用开发版[(点我跳转开发版)](/.code/快手自动续火花脚本-开发版.js)先运行一遍，然后向我反馈的时候附赠运行日志
+
+<details><summary>点击展开或收起样例展示</summary>
+   <div align="center">
+      <br>
+      <img src=".photo/photo-2.png" alt="" border="0"/>
+   </div>
+</details>
+
+#### 脚本所需权限:
 
 ##### 下列权限是需要给Autojs应用给予的权限，不给予可能导致脚本无法使用
 
@@ -84,10 +115,10 @@ JavaScript
 
 #### 注意事项：
 
-1. 如果你不需要使用密码打开手机，而是直接滑动解锁，请删除红色方框内的代码![code](/.photo/code.png)
+1. 如果你不需要使用密码打开手机，而是直接滑动解锁，请删除红色方框内的代码![code](.photo/code.png)
 2. 请勿同时运行多个重复脚本
 3. 脚本运行过程中请勿进行任何操作
-4. **测试使用版本**： autojs版本[(6.6.4)](https://pan.huang1111.cn/s/byQ1qcY)   快手版本[(13.7.30.43728)](https://pan.huang1111.cn/s/Wz33Pf3)
+4. **测试使用版本**： autojs版本[(6.6.4)](https://pan.huang1111.cn/s/byQ1qcY)   快手版本[(13.7.30.43728)](https://pan.huang1111.cn/s/Wz33Pf3)    理论上支持所有快手版本，只要快手界面不进行特别大的改动都可以支持
 5. 若新版本的脚本使用有问题，例如通过按钮名称自动寻找按钮位置点击无法生效，请尝试修改部分点击坐标的位置
 6. 需将发送消息的方式修改为发送按键
 7. 确保给予shizuku或Root权限
