@@ -18,7 +18,7 @@
 
 #### 前言:
 
-本作品是基于[AutoJS6抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二改制作的快手自动续火花
+本作品基于[AutoJS6抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二改修改并且重新制作的快手自动续火花脚本
 
 灵感来源：[LuckyLK](https://www.bilibili.com/video/BV1zb3xzUEXj)
 
