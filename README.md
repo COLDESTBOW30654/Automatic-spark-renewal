@@ -48,37 +48,6 @@ JavaScript
 [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)
 
-### 问题反馈:
-
-**如果你遇到脚本运行时产生的问题可以在以下提到的方式向我反馈**
-
-1. 在快手平台向我提交私信
-
-2. 在快手平台中我的相关视频评论
-
-3. 在哔哩哔哩平台向我提交私信
-
-4. 在哔哩哔哩平台中我的相关视频评论
-
-5. 在 GitHub 中的项目里提交 issue
-
-   [Issues · COLDESTBOW30654/Automatic-spark-renewal](https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues)
-
-6. 在 Gitee 中的项目里提交 issue
-
-   [Issues · 白鹿原嚒/automatic-spark-renewal - Gitee.com](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
-
-7. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
-
-##### 在反馈时可以使用开发版[(点我跳转开发版)](/.code/快手自动续火花脚本-开发版.js)先运行一遍，然后向我反馈的时候附赠运行日志
-
-<details><summary>点击展开或收起样例展示</summary>
-   <div align="center">
-      <br>
-      <img src=".photo/photo-2.png" alt="" border="0"/>
-   </div>
-</details>
-
 ### 脚本所需权限:
 
 #### 下列权限是需要给 Autojs 应用给予的权限，不给予可能导致脚本无法使用
@@ -133,6 +102,37 @@ JavaScript
 | 自动更新脚本     | 2025-09-12 | ✕        | ✕        |      |
 | 简化脚本使用条件     | 2025-09-12 | ✕        | ✕        |      |
 | 适配更多安卓设备 | 2025-09-12 | ✕        | ✕        |      |
+
+### 问题反馈:
+
+**如果你遇到脚本运行时产生的问题可以在以下提到的方式向我反馈**
+
+1. 在快手平台向我提交私信
+
+2. 在快手平台中我的相关视频评论
+
+3. 在哔哩哔哩平台向我提交私信
+
+4. 在哔哩哔哩平台中我的相关视频评论
+
+5. 在 GitHub 中的项目里提交 issue
+
+   [Issues · COLDESTBOW30654/Automatic-spark-renewal](https://github.com/COLDESTBOW30654/Automatic-spark-renewal/issues)
+
+6. 在 Gitee 中的项目里提交 issue
+
+   [Issues · 白鹿原嚒/automatic-spark-renewal - Gitee.com](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
+
+7. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
+
+##### 在反馈时可以使用开发版[(点我跳转开发版)](/.code/快手自动续火花脚本-开发版.js)先运行一遍，然后向我反馈的时候附赠运行日志
+
+<details><summary>点击展开或收起样例展示</summary>
+   <div align="center">
+      <br>
+      <img src=".photo/photo-2.png" alt="" border="0"/>
+   </div>
+</details>
 
 ### 常见问题回答：
 
