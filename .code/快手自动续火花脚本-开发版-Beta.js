@@ -11,94 +11,169 @@ try {
 // 设置当前脚本版本
 const CURRENT_VERSION = "1.0.0";
 
-// 仓库信息配置
-const GITHUB_REPO_URL = "https://github.com/coldestbow30654/automatic-spark-renewal";
-const GITEE_REPO_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal";
-const UPDATE_FILE_PATH = "update.txt"; // 更新文件路径
-
-// 显示当前版本
-toast("当前脚本版本: " + CURRENT_VERSION);
-console.log("当前脚本版本: " + CURRENT_VERSION);
-
-// 获取GitHub Raw内容URL
-function getGitHubRawUrl(githubUrl, filePath) {
-    // 将GitHub页面URL转换为Raw内容URL
-    return githubUrl.replace("github.com", "raw.githubusercontent.com") + "/main/" + filePath;
-}
-
-// 获取Gitee Raw内容URL
-function getGiteeRawUrl(giteeUrl, filePath) {
-    // 将Gitee页面URL转换为Raw内容URL
-    return giteeUrl + "/raw/main/" + filePath;
-}
-
-// 尝试从指定URL获取版本信息
-function tryGetVersionFromUrl(url, sourceName) {
+/**
+ * 版本检查更新函数
+ * @param {string} currentVersion 当前脚本版本号
+ * @param {function} [callback] 可选的回调函数，接收检查结果
+ * @returns {Promise<Object>} 返回包含检查结果的对象
+ */
+function update(currentVersion, callback) {
     return new Promise((resolve) => {
-        let timer = setTimeout(() => {
-            resolve({success: false, error: "超时", source: sourceName});
-        }, 30000); // 30秒超时
-        
-        try {
-            let response = http.get(url, {
-                headers: {
-                    'User-Agent': 'AutoJS Script'
+        // 仓库信息配置
+        const GITHUB_REPO_URL = "https://github.com/coldestbow30654/automatic-spark-renewal";
+        const GITEE_REPO_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal";
+        const UPDATE_FILE_PATH = "update.txt"; // 更新文件路径
+        const GITEE_PROJECT_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal"; // Gitee项目地址
+
+        // 获取GitHub Raw内容URL
+        function getGitHubRawUrl(githubUrl, filePath) {
+            return githubUrl.replace("github.com", "raw.githubusercontent.com") + "/main/" + filePath;
+        }
+
+        // 获取Gitee Raw内容URL
+        function getGiteeRawUrl(giteeUrl, filePath) {
+            return giteeUrl + "/raw/main/" + filePath;
+        }
+
+        // 尝试从指定URL获取版本信息
+        function tryGetVersionFromUrl(url, sourceName) {
+            return new Promise((resolveUrl) => {
+                let timer = setTimeout(() => {
+                    resolveUrl({success: false, error: "超时", source: sourceName});
+                }, 10000); // 10秒超时
+                
+                try {
+                    let response = http.get(url, {
+                        headers: {
+                            'User-Agent': 'AutoJS Script'
+                        },
+                        timeout: 10000 // 设置超时
+                    });
+                    
+                    clearTimeout(timer);
+                    
+                    if (response.statusCode === 200) {
+                        let content = response.body.string().trim();
+                        console.log("从" + sourceName + "获取到版本: " + content);
+                        resolveUrl({success: true, content: content, source: sourceName});
+                    } else {
+                        console.warn("从" + sourceName + "获取版本失败，状态码: " + response.statusCode);
+                        resolveUrl({success: false, error: "HTTP " + response.statusCode, source: sourceName});
+                    }
+                } catch (e) {
+                    clearTimeout(timer);
+                    console.warn("从" + sourceName + "获取版本时发生错误: " + e);
+                    resolveUrl({success: false, error: e.toString(), source: sourceName});
                 }
             });
-            
-            clearTimeout(timer);
-            
-            if (response.statusCode === 200) {
-                let content = response.body.string().trim();
-                console.log("从" + sourceName + "获取到版本: " + content);
-                resolve({success: true, content: content, source: sourceName});
-            } else {
-                console.warn("从" + sourceName + "获取版本失败，状态码: " + response.statusCode);
-                resolve({success: false, error: "HTTP " + response.statusCode, source: sourceName});
-            }
-        } catch (e) {
-            clearTimeout(timer);
-            console.warn("从" + sourceName + "获取版本时发生错误: " + e);
-            resolve({success: false, error: e.toString(), source: sourceName});
         }
+
+        // 比较版本号
+        function compareVersions(current, remote) {
+            if (!remote) {
+                return "无法获取远程版本";
+            }
+            
+            // 简单字符串比较
+            if (current === remote) {
+                return "版本一致";
+            } else {
+                return "发现新版本: " + remote + " (当前: " + current + ")";
+            }
+        }
+
+        // 主执行逻辑
+        function checkUpdate() {
+            let githubRawUrl = getGitHubRawUrl(GITHUB_REPO_URL, UPDATE_FILE_PATH);
+            let giteeRawUrl = getGiteeRawUrl(GITEE_REPO_URL, UPDATE_FILE_PATH);
+            
+            console.log("尝试从GitHub获取版本信息...");
+            tryGetVersionFromUrl(githubRawUrl, "GitHub").then(function(result) {
+                if (!result.success) {
+                    console.log("GitHub访问失败，原因: " + result.error + "，尝试Gitee...");
+                    return tryGetVersionFromUrl(giteeRawUrl, "Gitee");
+                } else {
+                    return result;
+                }
+            }).then(function(result) {
+                let finalResult = {
+                    success: result.success,
+                    currentVersion: currentVersion,
+                    source: result.source || "无"
+                };
+                
+                if (result.success) {
+                    finalResult.remoteVersion = result.content;
+                    finalResult.message = compareVersions(currentVersion, result.content);
+                    finalResult.hasUpdate = currentVersion !== result.content;
+                    
+                    // 如果发现新版本，发送通知
+                    if (finalResult.hasUpdate) {
+                        console.log("发现新版本: " + finalResult.remoteVersion);
+                        console.log("请前往 " + GITEE_PROJECT_URL + " 更新脚本");
+                        // 发送通知
+                        notice("发现新版本", "当前版本: " + CURRENT_VERSION + ", 最新版本: " + finalResult.remoteVersion + "。请手动访问Gitee更新脚本:https://gitee.com/coldestbow30654/automatic-spark-renewal");
+                    }
+                } else {
+                    finalResult.error = result.error;
+                    finalResult.message = "脚本更新检查失败";
+                }
+                
+                // 调用回调函数（如果提供）
+                if (typeof callback === 'function') {
+                    callback(finalResult);
+                }
+                
+                // 解析Promise
+                resolve(finalResult);
+            }).catch(function(error) {
+                let finalResult = {
+                    success: false,
+                    currentVersion: currentVersion,
+                    source: "无",
+                    error: error.toString(),
+                    message: "脚本更新检查失败"
+                };
+                if (typeof callback === 'function') {
+                    callback(finalResult);
+                }
+                resolve(finalResult);
+            });
+        }
+        
+        // 开始检查更新
+        checkUpdate();
     });
 }
 
-// 比较版本号
-function compareVersions(current, remote) {
-    if (!remote) {
-        return "无法获取远程版本";
-    }
+// 示例使用
+function updatemain() {
+    // 显示当前版本
+    console.log("当前脚本版本: " + CURRENT_VERSION);
+    toast("当前脚本版本: " + CURRENT_VERSION);
     
-    // 简单字符串比较
-    if (current === remote) {
-        return "版本一致";
-    } else {
-        return "发现新版本: " + remote + " (当前: " + current + ")";
-    }
-}
-
-// 主执行逻辑
-async function main() {
-    let githubRawUrl = getGitHubRawUrl(GITHUB_REPO_URL, UPDATE_FILE_PATH);
-    let giteeRawUrl = getGiteeRawUrl(GITEE_REPO_URL, UPDATE_FILE_PATH);
+    // 检查更新
+    console.log("开始检查更新...");
     
-    console.log("尝试从GitHub获取版本信息...");
-    let result = await tryGetVersionFromUrl(githubRawUrl, "GitHub");
-    
-    if (!result.success) {
-        console.log("GitHub访问失败，原因: " + result.error + "，尝试Gitee...");
-        result = await tryGetVersionFromUrl(giteeRawUrl, "Gitee");
-    }
-    
-    if (result.success) {
-        let comparisonResult = compareVersions(CURRENT_VERSION, result.content);
-        console.log("版本比较结果: " + comparisonResult);
-        alert("版本检查结果", "来源: " + result.source + "\n" + comparisonResult);
-    } else {
-        console.error("脚本更新检查失败，最后错误: " + result.error);
-        alert("版本检查失败", "无法从GitHub或Gitee获取版本信息\n最后错误: " + result.error);
-    }
+    update(CURRENT_VERSION, function(result) {
+        if (result.success) {
+            if (result.hasUpdate) {
+                console.log("发现新版本: " + result.remoteVersion);
+                console.log("请前往 https://gitee.com/coldestbow30654/automatic-spark-renewal 更新脚本");
+                // 这里可以添加其他更新逻辑
+            } else {
+                console.log("当前已是最新版本");
+                toast("当前已是最新版本");
+            }
+        } else {
+            console.log("更新检查失败: " + result.error);
+            toast("更新检查失败");
+        }
+        
+        // 更新检查完成后退出脚本
+        console.log("脚本执行完成，即将退出");
+        exit();
+    });
 }
 
 //在打开快手前置媒体音量为0，需要修改系统设置权限，如果没打开会自动跳转到设置界面
@@ -135,7 +210,7 @@ try {
 }
 
 //需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
-var friendNames = ["账号1", "账号2"];
+var friendNames = ["小号"];
 console.verbose(`已设置好友列表: ${friendNames.join(", ")}`);
 
 //在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
@@ -371,9 +446,8 @@ function killapp() {
       //发送结束运行消息
       console.verbose(`发送完成通知，总耗时: ${runTime}毫秒`);
       notice(`续火花完成！`, `总耗时: ${runTime}毫秒`);
-
-      // 执行脚本更新检查
-      main();
+      //调用更新检查函数
+      updatemain();
   } catch (e) {
       console.error("清理应用失败: " + e);
   }
@@ -383,7 +457,7 @@ function killapp() {
 console.verbose("脚本开始执行，调用解锁屏幕函数");
 try {
     unlockScreen();
-    console.verbose("脚本执行完成");
 } catch (e) {
     console.error("脚本执行失败: " + e);
+    exit();
 }
