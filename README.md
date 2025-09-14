@@ -236,8 +236,8 @@ A: 脚本需要的权限是模拟电源按键熄屏，如果没有这个权限�
 
 ###### 2025/08/24
 
-- `新增` Document-Root.md
-- `新增` Document-shizuku.md
+- `转移` Document-Root.md
+- `转移` Document-shizuku.md
 - `优化` README.md
 - `优化` 文字版教程
 
