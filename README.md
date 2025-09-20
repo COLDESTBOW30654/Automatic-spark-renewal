@@ -104,6 +104,7 @@ JavaScript
 
 | 计划             | 立项时间   | 完成时间 | 完成情况 | 描述 |
 | ---------------- | ---------- | -------- | -------- | ---- |
+| 推出独立的应用 | 2025-09-20 | ✕ | ✕ |  |
 | 多应用自动续火花 | 2025-09-12 | ✕        | ✕        |      |
 | 自动更新脚本     | 2025-09-12 | 2025-09-13 | ✓        | 能力有限，仅完成检查更新逻辑，目前处于测试阶段，暂只在[开发版-Beta](.code/快手自动续火花脚本-开发版-Beta.js)中测试 |
 | 简化脚本使用条件     | 2025-09-12 | ✕        | ✕        |      |
@@ -127,7 +128,7 @@ JavaScript
 
 6. 在 Gitee 中的项目里提交 issue
 
-   [Issues · 白鹿原嚒/automatic-spark-renewal - Gitee.com](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
+   [Issues · 白鹿原嚒/automatic-spark-renewal](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
 
 7. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
 
