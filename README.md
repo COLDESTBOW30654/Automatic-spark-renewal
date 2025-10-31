@@ -16,6 +16,9 @@
   </p>
 </div>
 
+### 项目官网：
+[https://automation.hengduan.dpdns.org/](https://automation.hengduan.dpdns.org/)
+
 ### 前言:
 
 本作品是基于[AutoJS6 抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二次修改并重新制作而编写的快手自动续火花脚本
