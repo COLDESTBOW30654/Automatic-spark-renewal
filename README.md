@@ -17,6 +17,7 @@
 </div>
 
 ### 项目官网：
+
 [https://automation.hengduan.dpdns.org/](https://automation.hengduan.dpdns.org/)
 
 ### 前言:
@@ -29,17 +30,15 @@
 
 bilibili 视频介绍：[快手自动续火花脚本-介绍](https://www.bilibili.com/video/BV11beMzNEgS)
 
-### 软件架构：
-
-[AutoJs6](https://github.com/SuperMonster003/AutoJs6)
-
-JavaScript
-
 ### 使用说明：
 
 **看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载 Autojs6 即可**
 
 [快手自动续火花脚本-懒人版(文字版教程)](.document/Document-Lazy.md)
+
+代码都不想看？试试官网中的”脚本构建“功能吧
+
+[点击我跳转项目官网](https://automation.hengduan.dpdns.org/build.html)
 
 **您可以访问每个版本专属的文字版教程**
 
@@ -50,6 +49,12 @@ JavaScript
 
 [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)
+
+### 软件架构：
+
+[AutoJs6](https://github.com/SuperMonster003/AutoJs6)
+
+JavaScript
 
 ### 脚本所需权限:
 
