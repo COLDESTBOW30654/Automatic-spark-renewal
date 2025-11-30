@@ -30,31 +30,41 @@
 
 bilibili 视频介绍：[快手自动续火花脚本-介绍](https://www.bilibili.com/video/BV11beMzNEgS)
 
-### 使用说明：
-
-**看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载 Autojs6 即可**
-
-[快手自动续火花脚本-懒人版(文字版教程)](.document/Document-Lazy.md)
-
-代码都不想看？试试官网中的”脚本构建“功能吧
-
-[点击我跳转项目官网](https://automation.hengduan.dpdns.org/build.html)
-
-**您可以访问每个版本专属的文字版教程**
-
-[快手自动续火花脚本-shizuku(文字版教程)](.document/Document-shizuku.md)
-[快手自动续火花脚本-Root(文字版教程)](.document/Document-Root.md)
-
-**如果以上文字版教程看不懂可以看视频版**
-
-[快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
-[快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)
-
 ### 软件架构：
 
-[AutoJs6](https://github.com/SuperMonster003/AutoJs6)
+- [AutoJs6](https://github.com/SuperMonster003/AutoJs6)
 
-JavaScript
+- JavaScript
+
+### 下载或复制代码：
+
+##### 这里不提供懒人版，懒人版在"懒人版文字教程"提供复制
+
+两个版本本质上只是模拟熄屏按键的代码不同，也就是最后一行，如只使用无障碍权限授权，且开着手机自动熄屏时长比较短，可复制任意一种版本的代码，删除最后一行
+
+**shizuku 版：**[快手自动续火花脚本-shizuku](.code/快手自动续火花脚本-shizuku.js)
+
+**Root 版：**[快手自动续火花脚本-Root](.code/快手自动续火花脚本-Root.js)
+
+**懒人版：**[懒人版文字教程](.document/Document-Lazy.md)
+
+**开发版：**[快手自动续火花脚本-开发版](.code/快手自动续火花脚本-开发版.js)
+
+### 下载修改版 AutoJs6：
+
+#### 在这里浏览最新构建(这里包含未发布的更新与修复)
+
+[工作流程运行 ·COLDESTBOW30654/Automatic-spark-renewal-APP --- Workflow runs · COLDESTBOW30654/Automatic-spark-renewal-APP](https://github.com/COLDESTBOW30654/Automatic-spark-renewal-APP/actions)
+
+#### 在这里浏览最新发布的版本(这里包含正式版与测试版)
+
+- GitHub releases(需要加速器)
+
+​	[Releases · COLDESTBOW30654/Automatic-spark-renewal-APP](https://github.com/COLDESTBOW30654/Automatic-spark-renewal-APP/releases)
+
+- gitee releases(国内镜像)
+
+​	[Automatic-spark-renewal-APP 发行版 - Gitee.com](https://gitee.com/coldestbow30654/Automatic-spark-renewal-APP/releases)
 
 ### 脚本所需权限:
 
@@ -83,19 +93,25 @@ JavaScript
 - shizuku 权限
 - Root 权限
 
-### 下载或复制代码：
+### 使用说明：
 
-##### 这里不提供懒人版，懒人版在"懒人版文字教程"提供复制
+**看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载 Autojs6 即可**
 
-两个版本本质上只是模拟熄屏按键的代码不同，也就是最后一行，如只使用无障碍权限授权，且开着手机自动熄屏时长比较短，可复制任意一种版本的代码，删除最后一行
+[快手自动续火花脚本-懒人版(文字版教程)](.document/Document-Lazy.md)
 
-**shizuku 版：**[快手自动续火花脚本-shizuku](.code/快手自动续火花脚本-shizuku.js)
+代码都不想看？试试官网中的”脚本构建“功能吧
 
-**Root 版：**[快手自动续火花脚本-Root](.code/快手自动续火花脚本-Root.js)
+[点击我跳转项目官网](https://automation.hengduan.dpdns.org/build.html)
 
-**懒人版：**[懒人版文字教程](.document/Document-Lazy.md)
+**您可以访问每个版本专属的文字版教程**
 
-**开发版：**[快手自动续火花脚本-开发版](.code/快手自动续火花脚本-开发版.js)
+[快手自动续火花脚本-shizuku(文字版教程)](.document/Document-shizuku.md)
+[快手自动续火花脚本-Root(文字版教程)](.document/Document-Root.md)
+
+**如果以上文字版教程看不懂可以看视频版**
+
+[快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
+[快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)
 
 ### 注意事项：
 
