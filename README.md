@@ -18,7 +18,7 @@
 
 ### 项目官网：
 
-[https://automation.hengduan.dpdns.org/](https://automation.hengduan.dpdns.org/)
+[https://automation.hengduan.qzz.io/](https://automation.hengduan.qzz.io/)
 
 ### 前言:
 
@@ -101,7 +101,7 @@ bilibili 视频介绍：[快手自动续火花脚本-介绍](https://www.bilibil
 
 代码都不想看？试试官网中的”脚本构建“功能吧
 
-[点击我跳转项目官网](https://automation.hengduan.dpdns.org/build.html)
+[点击我跳转项目官网](https://automation.hengduan.qzz.io/build.html)
 
 **您可以访问每个版本专属的文字版教程**
 
@@ -130,7 +130,7 @@ bilibili 视频介绍：[快手自动续火花脚本-介绍](https://www.bilibil
 | 推出独立的应用   | 2025-09-20 | 2025-11-29 | ✓        | 将脚本内置在autojs6应用中                                    |
 | 多应用自动续火花 | 2025-09-12 | ✕          | ✕        |                                                              |
 | 自动更新脚本     | 2025-09-12 | 2025-09-13 | ✓        | 无法通过通知跳转到更新网址，需要手动去日志里复制网址         |
-| 简化脚本使用条件 | 2025-09-12 | 2025-11-1  | ✓        | 通过项目网站进行构建，简化用户修改代码[(点击我跳转项目官网构建)](https://automation.hengduan.dpdns.org/build.html) |
+| 简化脚本使用条件 | 2025-09-12 | 2025-11-1  | ✓        | 通过项目网站进行构建，简化用户修改代码[(点击我跳转项目官网构建)](https://automation.hengduan.qzz.io/build.html) |
 | 适配更多安卓设备 | 2025-09-12 | ✕          | ✕        |                                                              |
 
 ### 问题反馈:
