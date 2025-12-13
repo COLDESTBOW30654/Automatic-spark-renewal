@@ -1,32 +1,28 @@
-# AutoJS6快手自动续火花-shizuku    使用教程(文字版)
+# AutoJS6自动续火花-Root    使用教程(文字版)
 
 文档编写时间：2025年8月23日13点23分
 
 #### 前言
 
-本文档将介绍如何使用AutoJS6快手自动续火花-shizuku，帮助你轻松实现每日自动续火花。
+本文档将介绍如何使用AutoJS6自动续火花-Root，帮助你轻松实现每日自动续火花。
 
 #### 准备工作
 
 - 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
-- 下载并安装shizuku：[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)
-- 复制shizuku版脚本：[点此跳转shizuku脚本](/.code/快手自动续火花脚本-shizuku.js) 
+- 复制Root版脚本：[点此跳转Root版脚本](/.code/快手/快手自动续火花脚本-Root.js)
 
 #### 步骤一：安装AutoJS6
-1. 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases) 
+- 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases) 
 如果无法访问可以使用镜像站下载[点此跳转下载AutoJS6(v6.6.4)](https://tvv.tw/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.6.4/autojs6-v6.6.4-arm64-v8a-110e6b64.apk)
 
-2. 下载并安装shizuku：[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)
-如果无法访问可以使用镜像站下载[点此跳转下载Shizuku(v13.6.0)](https://tvv.tw/https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk)
-
-
 #### 步骤二：配置AutoJS6
-1. 打开并启用shizuku，启用教程看这位大佬的视频[安卓免root神器，Shizuku全机型激活教程！](https://www.bilibili.com/video/BV1Ac1dYSELU?vd_source=5d390e1251e1b33bfb2306c8a255e726)
 
-2. 安装完成后，根据下图赋予相关权限
-![photo](/.photo/photo.png)
+1. 安装完成后，根据下图赋予相关权限
+![photo](/.photo/photo-1.png)
 
-3. 设置AutoJS6应用的权限(手机设置中修改)
+* 注意，使用Root版需要在你的超级用户权限管理里面赋予AutoJS6相关权限，否则无法正常运行。
+
+2. 设置AutoJS6应用的权限(手机设置中修改)
    - 无障碍权限
    - 应用自启动
    - 后台无限制
@@ -37,7 +33,7 @@
    - 允许通知
    - 修改系统设置
 
-4. 打开AutoJS6，点击左上角的菜单按钮，选择“新建”，粘贴复制好的脚本文件
+3. 打开AutoJS6，点击左上角的菜单按钮，选择“新建”，粘贴复制好的脚本文件
 
 #### 步骤三：配置脚本
 1. 根据脚本注释来修改脚本要续火花的人,红圈内填写你要续火花的人的名字，名字用英文逗号隔开，并且用填写在英文引号内
