@@ -116,39 +116,32 @@ function findUser() {
 function sendMessage() {
     console.verbose("开始发送消息流程");
     try {
+        var content = ""; //内容
+        //这里发送的消息的内容是通过获取API接口，获得每日内容
+        console.verbose("正在获取每日内容...");
+        var res = http.get("https://hengduan.qzz.io/get_content.php?key=example");
+        if (res.statusCode == 200) {
+            var textData = res.body.string();
+            console.verbose("成功获取API响应");
+            // 直接使用获取到的纯文本内容
+            content = textData.trim();
+            console.verbose("成功获取内容: " + content);
+        } else {
+            //在请求接口失败后发送的内容
+            content = "今天网络不佳，没词了";
+            console.verbose("API请求失败，使用默认内容");
+        }
         sleep(1000);
-        //发送续火花提示
-        console.verbose("输入续火花提示文本");
-        setText(`正在尝试自动续火花`);
+        //发送今日一言
+        console.verbose("输入今日内容: " + content);
+        setText(`${content}`);
         sleep(1000);
         //点击发送的按钮
         console.verbose("尝试点击发送按钮");
-        sleep(1000);
-        //点击发送的按钮，会自动找发送按钮的位置，无需定位
         var button = desc('发送').findOne();
         //点击按钮中心点
         click(button.bounds().centerX(), button.bounds().centerY());
         sleep(1000);
-
-
-        //获取续火花用时
-        let runTime = new Date().getTime() - startTime;
-        sleep(1000);
-        //转换时间
-        let milliseconds = runTime; // 直接赋值
-        let seconds = milliseconds / 1000; // 转换为秒
-
-        //输出用时
-        console.verbose(`续火花完成，总耗时: ${seconds}秒`);
-        setText(`续火花完成,总耗时: ${seconds}秒`);
-        sleep(1000);
-
-        //点击发送的按钮，会自动找发送按钮的位置，无需定位
-        var button = desc('发送').findOne();
-        //点击按钮中心点
-        click(button.bounds().centerX(), button.bounds().centerY());
-        sleep(1000);
-
         console.verbose("返回上一级界面");
         back();
     } catch (e) {
