@@ -20,29 +20,36 @@
 
 [https://automation.hengduan.qzz.io/](https://automation.hengduan.qzz.io/)
 
+---
+
 ### 前言:
 
 本作品是基于[AutoJS6 抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二次修改并重新制作而编写的自动续火花脚本
 
 灵感来源：[LuckyLK](https://www.bilibili.com/video/BV1zb3xzUEXj)
 
+---
+
 ### 介绍:
 
 bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/video/BV11beMzNEgS)
 
+---
+
 ### 软件架构：
 
 - [AutoJs6](https://github.com/SuperMonster003/AutoJs6)
-
 - JavaScript
+
+---
 
 ### 下载或复制代码：
 
-#### 快手自动续火花
-
 ##### 这里不提供懒人版，懒人版在"懒人版文字教程"提供复制
 
-两个版本本质上只是模拟熄屏按键的代码不同，也就是最后一行，如只使用无障碍权限授权，且开着手机自动熄屏时长比较短，可复制任意一种版本的代码，删除最后一行
+两个版本本质上只是模拟熄屏按键的代码不同，也就是最后一行，如只使用无障碍权限授权，且开着手机自动熄屏时长比较长，可复制任意一种版本的代码，删除最后一行
+
+#### 快手自动续火花
 
 **shizuku 版：**[快手自动续火花脚本-shizuku](.code/快手/快手自动续火花脚本-shizuku.js)
 
@@ -54,7 +61,21 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 #### 抖音自动续火花
 
+**shizuku 版：**[抖音自动续火花脚本-shizuku](.code/抖音/抖音自动续火花脚本-shizuku.js)
+
+**Root 版：**[抖音自动续火花脚本-Root](.code/抖音/抖音自动续火花脚本-Root.js)
+
 **开发版：**[抖音自动续火花脚本-开发版](.code/抖音/抖音自动续火花脚本-开发版.js)
+
+----
+
+#### 快手自动发消息
+
+**开发版：**[快手自动发消息-开发版](.code/快手/快手自动发消息-开发版.js)
+
+#### 快手自动发消息
+
+**开发版：**[抖音自动发消息-开发版](.code/抖音/抖音自动发消息-开发版.js)
 
 ### 下载修改版 AutoJs6：
 
@@ -71,6 +92,8 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 - gitee releases(国内镜像)
 
 ​	[Automatic-spark-renewal-APP 发行版 - Gitee.com](https://gitee.com/coldestbow30654/Automatic-spark-renewal-APP/releases)
+
+---
 
 ### 脚本所需权限:
 
@@ -99,13 +122,9 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 - shizuku 权限
 - Root 权限
 
+---
+
 ### 使用说明：
-
-#### 快手自动续火花
-
-**看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载 Autojs6 即可**
-
-[自动续火花脚本-懒人版(文字版教程)](.document/快手/Document-Lazy.md)
 
 代码都不想看？试试官网中的”脚本构建“功能吧
 
@@ -113,17 +132,17 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 **您可以访问每个版本专属的文字版教程**
 
-[自动续火花脚本-shizuku(文字版教程)](.document/快手/Document-shizuku.md)
-[自动续火花脚本-Root(文字版教程)](.document/快手/Document-Root.md)
+[自动续火花脚本-shizuku(文字版教程)](.document/Document-shizuku.md)
+[自动续火花脚本-Root(文字版教程)](.document/Document-Root.md)
+
+**看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载 Autojs6 即可**
+
+[k快手自动续火花脚本-懒人版(文字版教程)](.document/Document-Lazy.md)
 
 **如果以上文字版教程看不懂可以看视频版**
 
 [快手自动自动续火花-教程(快手观看)](https://www.kuaishou.com/short-video/3xywczexb6t35cw)
 [快手自动自动续火花-教程(哔哩哔哩观看)](https://www.bilibili.com/video/BV1J5Y9zEECi/)
-
-#### 抖音自动续火花
-
-请等待相关教程文档的编写
 
 ### 注意事项：
 
@@ -140,7 +159,7 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 | 计划             | 立项时间   | 完成时间   | 完成情况 | 描述                                                         |
 | ---------------- | ---------- | ---------- | -------- | ------------------------------------------------------------ |
 | 推出独立的应用   | 2025-09-20 | 2025-11-29 | ✓        | 将脚本内置在autojs6应用中                                    |
-| 多应用自动续火花 | 2025-09-12 | ✕          | ✕        | 即将推出抖音自动续火花！！！                                 |
+| 多应用自动续火花 | 2025-09-12 | 2056-03-03 | ✓        | 将基本功能移植到抖音中                                       |
 | 自动更新脚本     | 2025-09-12 | 2025-09-13 | ✓        | 无法通过通知跳转到更新网址，需要手动去日志里复制网址         |
 | 简化脚本使用条件 | 2025-09-12 | 2025-11-1  | ✓        | 通过项目网站进行构建，简化用户修改代码[(点击我跳转项目官网构建)](https://automation.hengduan.qzz.io/build.html) |
 | 适配更多安卓设备 | 2025-09-12 | ✕          | ✕        |                                                              |
@@ -171,7 +190,7 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 9. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
 
-##### 在反馈时可以使用开发版[(点我跳转开发版)](/.code/快手/快手自动续火花脚本-开发版.js)先运行一遍，然后向我反馈的时候附赠运行日志
+##### 在反馈时可以使用开发版[(点我跳转快手开发版)](.code/快手/快手自动续火花脚本-开发版.js)[(点我跳转抖音开发版)](.code/抖音/抖音自动续火花脚本-开发版.js)先运行一遍，然后向我反馈的时候附赠运行日志
 
 <details><summary>点击展开或收起样例展示</summary>
    <div align="center">
@@ -179,7 +198,6 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
       <img src=".photo/photo-2.png" alt="" border="0"/>
    </div>
 </details>
-
 ### 常见问题回答：
 
 Q: autojs 如何下载安装使用？

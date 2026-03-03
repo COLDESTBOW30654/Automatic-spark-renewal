@@ -119,7 +119,7 @@ function sendMessage() {
         var content = ""; //内容
         //这里发送的消息的内容是通过获取API接口，获得每日内容
         console.verbose("正在获取每日内容...");
-        var res = http.get("https://hengduan.qzz.io/get_content.php?key=example");
+        var res = http.get("https://dailyarticle.hengduan.qzz.io/get_content.php?key=example");
         if (res.statusCode == 200) {
             var textData = res.body.string();
             console.verbose("成功获取API响应");

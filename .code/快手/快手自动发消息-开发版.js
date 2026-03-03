@@ -15,7 +15,7 @@ function update(currentVersion, callback) {
         // 仓库信息配置
         const GITHUB_REPO_URL = "https://github.com/coldestbow30654/automatic-spark-renewal";
         const GITEE_REPO_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal";
-        const UPDATE_FILE_PATH = "update.txt"; // 更新文件路径
+        const UPDATE_FILE_PATH = "/update/kuaishou/update.txt"; // 更新文件路径
         const GITEE_PROJECT_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal"; // Gitee项目地址
 
         // 获取GitHub Raw内容URL
@@ -226,7 +226,7 @@ function findUser() {
 function sendMessage() {
   var content = ""; //内容
   //这里发送的消息的内容是通过获取API接口，获得每日内容
-  var res = http.get("https://hengduan.qzz.io/get_content.php?key=example");
+  var res = http.get("https://dailyarticle.hengduan.qzz.io/get_content.php?key=example");
   if (res.statusCode == 200) {
     var textData = res.body.string();
     // 直接使用获取到的纯文本内容

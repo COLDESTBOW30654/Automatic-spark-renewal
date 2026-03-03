@@ -9,7 +9,7 @@ try {
 }
 
 // 设置当前脚本版本
-const CURRENT_VERSION = "1.0.0";
+const CURRENT_VERSION = "1.0.1";
 
 /**
  * 版本检查更新函数
@@ -22,7 +22,7 @@ function update(currentVersion, callback) {
         // 仓库信息配置
         const GITHUB_REPO_URL = "https://github.com/coldestbow30654/automatic-spark-renewal";
         const GITEE_REPO_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal";
-        const UPDATE_FILE_PATH = "update.txt"; // 更新文件路径
+        const UPDATE_FILE_PATH = "/update/kuaishou/update.txt"; // 更新文件路径
         const GITEE_PROJECT_URL = "https://gitee.com/coldestbow30654/automatic-spark-renewal"; // Gitee项目地址
 
         // 获取GitHub Raw内容URL
