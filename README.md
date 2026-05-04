@@ -16,13 +16,11 @@
   </p>
 </div>
 
-### 项目官网：
-
-[https://automation.hengduan.qzz.io/](https://automation.hengduan.qzz.io/)
-
 ---
 
 ### 前言:
+
+**由于作者正在备战中考，本项目将暂停维护一段时间**
 
 本作品是基于[AutoJS6 抖音自动续火花](https://gitee.com/ewaaa/auto-js6-tiktok-auto-spark)二次修改并重新制作而编写的自动续火花脚本
 
@@ -51,9 +49,7 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 #### 快手自动续火花
 
-**shizuku 版：**[快手自动续火花脚本-shizuku](.code/快手/快手自动续火花脚本-shizuku.js)
-
-**Root 版：**[快手自动续火花脚本-Root](.code/快手/快手自动续火花脚本-Root.js)
+**全能版：**[快手自动续火花脚本](.code/快手/快手自动续火花脚本)
 
 **懒人版：**[快手懒人版文字教程](.document/快手/Document-Lazy.md)
 
@@ -77,21 +73,17 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 **开发版：**[抖音自动发消息-开发版](.code/抖音/抖音自动发消息-开发版.js)
 
-### 下载修改版 AutoJs6：
+### 下载 AutoJs6：
 
-#### 在这里浏览最新构建(这里包含未发布的更新与修复)
-
-[工作流程运行 ·COLDESTBOW30654/Automatic-spark-renewal-APP --- Workflow runs · COLDESTBOW30654/Automatic-spark-renewal-APP](https://github.com/COLDESTBOW30654/Automatic-spark-renewal-APP/actions)
-
-#### 在这里浏览最新发布的版本(这里包含正式版与测试版)
+#### 在这里浏览推荐的版本
 
 - GitHub releases(需要加速器)
 
-​	[Releases · COLDESTBOW30654/Automatic-spark-renewal-APP](https://github.com/COLDESTBOW30654/Automatic-spark-renewal-APP/releases)
+​	[autojs6-v6.7.0-arm64-v8a-62db1ff8.apk](https://github.com/SuperMonster003/AutoJs6/releases/download/v6.7.0/autojs6-v6.7.0-arm64-v8a-62db1ff8.apk)
 
 - gitee releases(国内镜像)
 
-​	[Automatic-spark-renewal-APP 发行版 - Gitee.com](https://gitee.com/coldestbow30654/Automatic-spark-renewal-APP/releases)
+​	[autojs6-v6.7.0-arm64-v8a-62db1ff8.apk - 镜像](https://gh-proxy.org/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.7.0/autojs6-v6.7.0-arm64-v8a-62db1ff8.apk)
 
 ---
 
@@ -126,14 +118,9 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 ### 使用说明：
 
-代码都不想看？试试官网中的”脚本构建“功能吧
-
-[点击我跳转项目官网](https://automation.hengduan.qzz.io/build.html)
-
 **您可以访问每个版本专属的文字版教程**
 
-[自动续火花脚本-shizuku(文字版教程)](.document/Document-shizuku.md)
-[自动续火花脚本-Root(文字版教程)](.document/Document-Root.md)
+[自动续火花脚本(文字版教程)](.document/Document.md)
 
 **看不懂可以用懒人版，但稳定性较差，不过不需要多余的软件，只要下载 Autojs6 即可**
 
@@ -146,13 +133,12 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 ### 注意事项：
 
-1. 如果你不需要使用密码打开手机，而是直接滑动解锁，请删除红色方框内的代码![code](.photo/code.png)
-2. 请勿同时运行多个重复脚本
-3. 脚本运行过程中请勿进行任何操作
-4. **测试使用版本**： autojs 版本[(6.6.4)](https://pan.huang1111.cn/s/byQ1qcY) 修改版 autojs 版本[(1.0.0)](https://pan.huang1111.cn/s/G8wD6sW) 快手版本[(13.7.30.43728)](https://pan.huang1111.cn/s/Wz33Pf3) 抖音版本(37.0.0)理论上支持所有快手与抖音的版本，只要界面不进行特别大的改动都可以支持
-5. 若新版本的脚本使用有问题，例如通过按钮名称自动寻找按钮位置点击无法生效，请尝试修改部分点击坐标的位置
-6. 需将发送消息的方式修改为发送按键
-7. 确保给予 shizuku 或 Root 权限
+1. 请勿同时运行多个重复脚本
+2. 脚本运行过程中请勿进行任何操作
+3. **测试使用版本**： autojs 版本[(6.7.0)](https://pan.huang1111.cn/s/WzVQDU3)快手版本[(13.7.30.43728)](https://pan.huang1111.cn/s/Wz33Pf3) 抖音版本(37.0.0)理论上支持所有快手与抖音的版本，只要界面不进行特别大的改动都可以支持
+4. 若新版本的脚本使用有问题，例如通过按钮名称自动寻找按钮位置点击无法生效，请尝试修改部分点击坐标的位置
+5. 需将发送消息的方式修改为发送按键
+6. 确保给予 shizuku 或 Root 权限
 
 ### 未来更新计划
 
@@ -160,8 +146,8 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 | ---------------- | ---------- | ---------- | -------- | ------------------------------------------------------------ |
 | 推出独立的应用   | 2025-09-20 | 2025-11-29 | ✓        | 将脚本内置在autojs6应用中                                    |
 | 多应用自动续火花 | 2025-09-12 | 2056-03-03 | ✓        | 将基本功能移植到抖音中                                       |
-| 自动更新脚本     | 2025-09-12 | 2025-09-13 | ✓        | 无法通过通知跳转到更新网址，需要手动去日志里复制网址         |
-| 简化脚本使用条件 | 2025-09-12 | 2025-11-1  | ✓        | 通过项目网站进行构建，简化用户修改代码[(点击我跳转项目官网构建)](https://automation.hengduan.qzz.io/build.html) |
+| 自动更新脚本     | 2025-09-12 | 2025-09-13 | ✓        | 无法通过通知跳转到更新网址，需要手动去日志里复制网址(已移除) |
+| 简化脚本使用条件 | 2025-09-12 | 2026-05-04 | ✓        | 直接脚本顶部配置                                             |
 | 适配更多安卓设备 | 2025-09-12 | ✕          | ✕        |                                                              |
 
 ### 问题反馈:
@@ -188,8 +174,6 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
    [Issues · 白鹿原嚒/automatic-spark-renewal](https://gitee.com/coldestbow30654/automatic-spark-renewal/issues)
 
-9. 发送邮件到我的邮箱：<EMAIL>automatic-spark-renewal@hengduan.dpdns.org
-
 ##### 在反馈时可以使用开发版[(点我跳转快手开发版)](.code/快手/快手自动续火花脚本-开发版.js)[(点我跳转抖音开发版)](.code/抖音/抖音自动续火花脚本-开发版.js)先运行一遍，然后向我反馈的时候附赠运行日志
 
 <details><summary>点击展开或收起样例展示</summary>
@@ -214,27 +198,7 @@ A: 理论上支持所有设备，但条件有限暂未测试
 
 Q: 脚本发送的内容可以自定义吗？
 
-A: 你可以根据下列图片来修改部分脚本发送的文本
-
-这里修改发送的第一句
-
-![code-1](.photo/code-1.png)
-
-删除这里关闭自动续火花提示
-
-![code-5](.photo/code-5.png)
-
-这里修改发送的一言，删除后不会输出一言，但还会发送原始变量
-
-![code-2](.photo/code-2.png)
-
-删除这里彻底关闭一言
-
-![code-3](.photo/code-3.png)
-
-删除这里关闭续火花时长告知对方
-
-![code-4](.photo/code-4.png)
+A: 修改配置即可
 
 Q: 如何知道我手机点击位置的坐标？
 
