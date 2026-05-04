@@ -81,7 +81,7 @@ bilibili 视频介绍：[自动续火花脚本-介绍](https://www.bilibili.com/
 
 ​	[autojs6-v6.7.0-arm64-v8a-62db1ff8.apk](https://github.com/SuperMonster003/AutoJs6/releases/download/v6.7.0/autojs6-v6.7.0-arm64-v8a-62db1ff8.apk)
 
-- gitee releases(国内镜像)
+- 国内镜像
 
 ​	[autojs6-v6.7.0-arm64-v8a-62db1ff8.apk - 镜像](https://gh-proxy.org/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.7.0/autojs6-v6.7.0-arm64-v8a-62db1ff8.apk)
 
