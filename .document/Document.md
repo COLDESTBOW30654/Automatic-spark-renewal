@@ -1,23 +1,23 @@
-# AutoJS6自动续火花-shizuku    使用教程(文字版)
+# AutoJS6自动续火花    使用教程(文字版)
 
 文档编写时间：2025年8月23日13点23分
 
 #### 前言
 
-本文档将介绍如何使用AutoJS6自动续火花-shizuku，帮助你轻松实现每日自动续火花。
+本文档将介绍如何使用AutoJS6自动续火花，帮助你轻松实现每日自动续火花。
 
 #### 准备工作
 
 - 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases)
 - 下载并安装shizuku：[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)
-- 复制shizuku版脚本：[点此跳转shizuku快速脚本](../.code/快手/快手自动续火花脚本-shizuku.js)}{[点此跳转shizuku抖音脚本](../.code/抖音/抖音自动续火花脚本-shizuku.js) 
+- 复制脚本：[点此跳转快手自动续火花脚本](../.code/自动续火花/快手/快手自动续火花脚本.js) | [点此跳转抖音自动续火花脚本](../.code/自动续火花/抖音/抖音自动续火花脚本.js)
 
 #### 步骤一：安装AutoJS6
 1. 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases) 
-如果无法访问可以使用镜像站下载[点此跳转下载AutoJS6(v6.6.4)](https://tvv.tw/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.6.4/autojs6-v6.6.4-arm64-v8a-110e6b64.apk)
+如果无法访问可以使用镜像站下载[点此跳转下载AutoJS6(v6.7.0)](https://ghproxy.net/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.7.0/autojs6-v6.7.0-arm64-v8a-62db1ff8.apk)
 
 2. 下载并安装shizuku：[点此跳转releases下载](https://github.com/RikkaApps/Shizuku/releases)
-如果无法访问可以使用镜像站下载[点此跳转下载Shizuku(v13.6.0)](https://tvv.tw/https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk)
+如果无法访问可以使用镜像站下载[点此跳转下载Shizuku(v13.6.0)](https://ghproxy.net/https://github.com/RikkaApps/Shizuku/releases/download/v13.6.0/shizuku-v13.6.0.r1086.2650830c-release.apk)
 
 
 #### 步骤二：配置AutoJS6

@@ -1,4 +1,20 @@
-//检查无障碍服务是否开启，没有开启则跳转到设置开启界面
+// ==================== 配置区域 ====================
+// 需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
+var friendNames = ["账号1", "账号2"];
+// 在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
+var password = [1, 2, 3, 4, 5, 6];
+// 点击续火花表情的次数
+var sparkClickCount = 20;
+// 每次点击续火花表情后的等待时间（毫秒）
+var sparkClickInterval = 500;
+// ==================== 配置区域结束 ====================
+
+// 显示控制台悬浮窗
+console.show();
+console.verbose(`已设置好友列表: ${friendNames.join(", ")}`);
+console.verbose("密码已设置");
+
+// 检查无障碍服务是否开启，没有开启则跳转到设置开启界面
 console.verbose("正在检查无障碍服务是否开启...");
 try {
     auto.waitFor();
@@ -7,7 +23,8 @@ try {
     console.error("无障碍服务检查失败: " + e);
     exit();
 }
-//在打开快手前置媒体音量为0，需要修改系统设置权限，如果没打开会自动跳转到设置界面
+
+// 在打开快手前置媒体音量为0，需要修改系统设置权限，如果没打开会自动跳转到设置界面
 console.verbose("正在设置媒体音量为0...");
 try {
     device.setMusicVolume(0);
@@ -16,7 +33,7 @@ try {
     console.error("设置媒体音量失败: " + e);
 }
 
-//发送系统消息提示，需要开启发布通知权限，如果没有打开会自动跳转到设置界面
+// 发送系统消息提示，需要开启发布通知权限，如果没有打开会自动跳转到设置界面
 var d = new Date();
 console.verbose("正在发送开始执行通知...");
 try {
@@ -26,12 +43,12 @@ try {
     console.error("发送通知失败: " + e);
 }
 
-//记录开始时间，用于统计运行时间
+// 记录开始时间，用于统计运行时间
 let startTime = new Date().getTime();
 console.verbose("开始计时，等待5秒...");
 sleep(5000);
 
-//检查屏幕是否解锁，没有解锁则点亮屏幕
+// 检查屏幕是否解锁，没有解锁则点亮屏幕
 console.verbose("检查屏幕是否解锁...");
 try {
     device.wakeUpIfNeeded();
@@ -40,19 +57,11 @@ try {
     console.error("唤醒屏幕失败: " + e);
 }
 
-//需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
-var friendNames = ["账号1", "账号2"];
-console.verbose(`已设置好友列表: ${friendNames.join(", ")}`);
-
-//在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
-var password = [1, 2, 3, 4, 5, 6];
-console.verbose("密码已设置");
-
-//执行在点亮手机后，用于上滑手势，并输入密码
+// 执行在点亮手机后，用于上滑手势，并输入密码
 function unlockScreen() {
   console.verbose("开始执行解锁屏幕流程");
   sleep(1000);
-  //上滑手势，进入输入密码界面（如果你的手机手势不是上滑，可能需要其他办法）
+  // 上滑手势，进入输入密码界面（如果你的手机手势不是上滑，可能需要其他办法）
   console.verbose("执行上滑手势进入密码界面");
   try {
       swipe(device.width / 2, device.height - 100, device.width / 2, device.height / 2, 500);
@@ -64,7 +73,7 @@ function unlockScreen() {
   }
 }
 
-//打开指定软件
+// 打开指定软件
 function openApp() {
   console.verbose("正在打开快手应用...");
   try {
@@ -80,14 +89,14 @@ function openApp() {
 
 function findUser() {
   console.verbose("开始查找用户流程");
-  //点击屏幕中的消息文本
+  // 点击屏幕中的消息文本
   console.verbose("尝试点击'消息'选项卡");
   try {
       click("消息");
       sleep(5000);
       console.verbose("已进入消息界面，等待5秒");
       
-      //根据上面填写的昵称列表，挨个点击进入聊天界面
+      // 根据上面填写的昵称列表，挨个点击进入聊天界面
       console.verbose(`开始遍历好友列表，共 ${friendNames.length} 个好友`);
       for (let i = 0; i < friendNames.length; i++) {
           console.verbose(`正在处理第 ${i+1}/${friendNames.length} 个好友: ${friendNames[i]}`);
@@ -110,74 +119,71 @@ function findUser() {
   }
 }
 
-//发送消息
+// 发送消息
 function sendMessage() {
     console.verbose("开始发送消息流程");
     try {
         sleep(100);
-        //发送续火花提示
+        // 发送续火花提示
         console.verbose("输入续火花提示文本");
         setText(`正在尝试自动续火花`);
         sleep(100);
-         //点击发送的按钮
+        // 点击发送的按钮
         console.verbose("尝试点击发送按钮");
         id("send_btn").findOne().click();
         sleep(100);
-        //点击表情按钮
+        
+        // 点击表情按钮
         console.verbose("尝试点击表情按钮");
         id("emotion_btn").findOne().click();
         sleep(100);
         
-        //划到表情最前面
-        console.verbose("滑动表情选项卡到最前面");
-        // 通过控件ID查找控件
-        let targetWidget = id("tabIndicator").findOne(5000);
-        if (!targetWidget) {
-            console.error("未找到表情选项卡控件，操作可能失败");
-            return;
-        }
-        
-        // 获取控件坐标信息
+        // 划到表情最前面
+        console.verbose("正在滑动表情栏到最前端...");
+        let targetWidget = id("tabIndicator").findOne();
         let bounds = targetWidget.bounds();
         let centerY = bounds.centerY();
-        // 计算滑动路径的起点和终点 (从控件右侧划到左侧)
-        let startX = bounds.right; // 起点：控件右侧50像素处
-        let endX = bounds.left + 10000;   // 终点：控件左侧50像素处
-        let yPos = centerY;            // Y轴使用控件中心高度
-        // 执行滑动操作 (600毫秒完成)
+        let startX = bounds.right;
+        let endX = bounds.left + 10000;
+        let yPos = centerY;
         swipe(startX, yPos, endX, yPos, 500);
-        console.verbose("表情选项卡滑动完成");
         
-        //并点击表情
         sleep(1000);
         auto.waitFor();
         sleep(1000);
         
-        //将表情向上划到顶端
-        console.verbose("向上滑动表情列表");
+        // 将表情向上划到顶端
+        console.verbose("向上滑动表情列表到顶端...");
         swipe(device.width / 2, device.height - 320, device.width / 2, device.height + 8000, 500);
         sleep(1000);
         
-        //自动点击续火花表情
-        for (let i = 0; i < 20; i++) {
-            console.verbose(`点击第${i+1}个续火花表情${i+1}`);
+        // 自动点击续火花表情
+        console.verbose(`开始点击续火花表情，计划点击 ${sparkClickCount} 次`);
+        for (let i = 0; i < sparkClickCount; i++) {
+            console.verbose(`点击第 ${i+1}/${sparkClickCount} 个续火花表情`);
             id("emotion_name").className("android.widget.TextView").text("续火花").findOne().parent().click();
-            sleep(500);
+            sleep(sparkClickInterval);
         }
-
-        //获取续火花用时
+        
+        // 发送续火花消息
+        console.verbose("发送续火花表情消息");
+        sleep(1000);
+        id("send_btn").findOne().click();
+        sleep(1000);
+        
+        // 获取续火花用时
         let runTime = new Date().getTime() - startTime;
         sleep(1000);
-        //转换时间
+        // 转换时间
         let milliseconds = runTime; // 直接赋值
         let seconds = milliseconds / 1000; // 转换为秒
         
-        //输出用时
+        // 输出用时
         console.verbose(`续火花完成，总耗时: ${seconds}秒`);
         setText(`续火花完成,总耗时: ${seconds}秒`);
         sleep(1000);
         
-        //点击发送的按钮
+        // 点击发送的按钮
         console.verbose("发送完成消息");
         id("send_btn").findOne().click();
         sleep(1000);
@@ -193,34 +199,33 @@ function sendMessage() {
 function killapp() {
   console.verbose("开始清理应用流程");
   try {
-      //呼出最近任务
+      // 呼出最近任务
       console.verbose("呼出最近任务");
       recents();
       sleep(1000);
       
-      //通过上滑的方式清除应用后台，手机分辨率大，可能导致上滑距离不足，可以自己试着修改一下数值，增加滑动距离
+      // 通过上滑的方式清除应用后台，手机分辨率大，可能导致上滑距离不足，可以自己试着修改一下数值，增加滑动距离
       console.verbose("上滑清除应用后台");
-      //解读一下下面这句代码意思就是：从（设备的宽度/2，设备的高度/2在向下400像素）滑到（设备的宽度/2，设备高度/2在向上400像素），移动时间200毫秒
+      // 解读一下下面这句代码意思就是：从（设备的宽度/2，设备的高度/2在向下400像素）滑到（设备的宽度/2，设备高度/2在向上400像素），移动时间200毫秒
       swipe(device.width / 2, device.height / 2 + 400, device.width / 2, device.height / 2 - 400, 200);
       sleep(1000);
       
-      //返回桌面
+      // 返回桌面
       console.verbose("返回桌面");
       home();
       sleep(1000);
       
-      //记录运行时间
+      // 记录运行时间
       let runTime = new Date().getTime() - startTime;
-      //发送结束运行消息
+      // 发送结束运行消息
       console.verbose(`发送完成通知，总耗时: ${runTime}毫秒`);
       notice(`续火花完成！`, `总耗时: ${runTime}毫秒`);
-      updatemain();
   } catch (e) {
       console.error("清理应用失败: " + e);
   }
 }
 
-//立即调用函数调用链的第一个函数，使程序运行
+// 立即调用函数调用链的第一个函数，使程序运行
 console.verbose("脚本开始执行，调用解锁屏幕函数");
 try {
     unlockScreen();

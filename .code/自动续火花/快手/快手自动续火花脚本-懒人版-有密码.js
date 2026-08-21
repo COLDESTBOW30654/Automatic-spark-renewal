@@ -1,3 +1,10 @@
+// ==================== 配置区域 ====================
+//需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
+var friendNames = ["账号1", "账号2"];
+//在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
+var password = [1, 2, 3, 4, 5, 6];
+// ==================== 配置区域结束 ====================
+
 //检查无障碍服务是否开启，没有开启则跳转到设置开启界面
 auto.waitFor();
 //在打开快手前置媒体音量为0，需要修改系统设置权限，如果没打开会自动跳转到设置界面
@@ -10,11 +17,6 @@ let startTime = new Date().getTime();
 sleep(5000);
 //检查屏幕是否解锁，没有解锁则点亮屏幕
 device.wakeUpIfNeeded();
-
-//需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
-var friendNames = ["账号1", "账号2"];
-//在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
-var password = [1, 2, 3, 4, 5, 6];
 
 function unlockScreen() {
   sleep(1000);
@@ -56,8 +58,11 @@ function findUser() {
 function sendMessage() {
     var content = ""; //内容
     var from = ""; //出处
-    //这里发送的消息的内容是通过hitokoto的api接口，获得不重复的随机的名人名言
-    var res = http.get("https://v1.hitokoto.cn/");
+    // 随机选择一言分类: i (诗词), j (网易云), k (哲学)
+    var types = ["i", "j", "k"];
+    var randomType = types[Math.floor(Math.random() * types.length)];
+    // 这里发送的消息的内容是通过hitokoto的api接口，获得不重复的随机名言（诗词/网易云/哲学）
+    var res = http.get("https://v1.hitokoto.cn/?c=" + randomType);
     if (res.statusCode == 200) {
         var data = res.body.json();
         content = data.hitokoto;
@@ -95,7 +100,7 @@ function sendMessage() {
     //将表情向上划到顶端
     swipe(device.width / 2, device.height - 320, device.width / 2, device.height + 8000, 500);
     sleep(1000);
-    //自动点击续火花表情
+    //自动点击续火花表情20次
     for (let i = 0; i < 20; i++) {
         id("emotion_name").className("android.widget.TextView").text("续火花").findOne().parent().click();
         sleep(500);

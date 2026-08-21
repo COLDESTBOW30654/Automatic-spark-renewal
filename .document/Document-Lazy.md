@@ -12,7 +12,7 @@
 
 #### 步骤一：安装AutoJS6
 - 下载并安装AutoJS6：[点此跳转releases下载](https://github.com/SuperMonster003/AutoJs6/releases) 
-如果无法访问可以使用镜像站下载[点此跳转下载AutoJS6(v6.6.4)](https://tvv.tw/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.6.4/autojs6-v6.6.4-arm64-v8a-110e6b64.apk)
+如果无法访问可以使用镜像站下载[点此跳转下载AutoJS6(v6.7.0)](https://ghproxy.net/https://github.com/SuperMonster003/AutoJs6/releases/download/v6.7.0/autojs6-v6.7.0-arm64-v8a-62db1ff8.apk)
 
 #### 步骤二：配置AutoJS6
 
@@ -34,7 +34,7 @@
 
 #### 步骤三：配置脚本
 
-- 配置前你需要先选择你的脚本[有密码(点击跳转)](../.code/快手/快手自动续火花脚本-懒人版-有密码.js)或者[无密码(点击跳转)](../.code/快手/快手自动续火花脚本-懒人版-无密码.js)
+- 配置前你需要先选择你的脚本[有密码(点击跳转)](../.code/自动续火花/快手/快手自动续火花脚本-懒人版-有密码.js)或者[无密码(点击跳转)](../.code/自动续火花/快手/快手自动续火花脚本-懒人版-无密码.js)
 1. 根据脚本注释来修改脚本要续火花的人,红圈内填写你要续火花的人的名字，名字用英文逗号隔开，并且用填写在英文引号内
 ![code-6](../.photo/code-6.png)
 

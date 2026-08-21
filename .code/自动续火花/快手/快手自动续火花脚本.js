@@ -1,3 +1,28 @@
+// ==================== 配置区域 ====================
+var config = {
+    // 需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
+    friendNames: ["账号1", "账号2"],
+    // 在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
+    password: [1, 2, 3, 4, 5, 6],
+    // 是否启用密码解锁（true: 启用, false: 跳过解锁直接打开应用）
+    enablePassword: true,
+    // 点击续火花表情的次数
+    sparkClickCount: 20,
+    // 每次点击续火花表情后的等待时间（毫秒）
+    sparkClickInterval: 500,
+    // 自动续火花声明消息
+    sparkMessage: "正在尝试自动续火花",
+    // 是否启用今日一言（true: 启用, false: 不发送）
+    enableHitokoto: true,
+    // 是否输出用时（true: 输出, false: 不输出）
+    enableTimeOutput: true,
+    // 是否启用自动息屏（true: 启用, false: 不启用）
+    enableAutoSleep: true,
+    // 息屏模式（"root": root权限模式, "shizuku": shizuku权限模式）
+    sleepMode: "shizuku"
+};
+// ==================== 配置区域结束 ====================
+
 //检查无障碍服务是否开启，没有开启则跳转到设置开启界面
 auto.waitFor();
 //在打开快手前置媒体音量为0，需要修改系统设置权限，如果没打开会自动跳转到设置界面
@@ -12,16 +37,24 @@ sleep(5000);
 device.wakeUpIfNeeded();
 
 //需要发送的朋友的快手（与消息界面昵称一致，也就是修改备注的就是备注名称）
-var friendNames = ["账号1", "账号2"];
+var friendNames = config.friendNames;
 //在这里输入你的锁屏密码，如果4位或其他，则修改数组长度，例如：[1, 2, 3, 4];
-var password = [1, 2, 3, 4, 5, 6];
+var password = config.password;
 
-//执行在点亮手机后，用于上滑手势，并输入密码
 function unlockScreen() {
-  sleep(1000);
-  //上滑手势，进入输入密码界面（如果你的手机手势不是上滑，可能需要其他办法）
-  swipe(device.width / 2, device.height - 100, device.width / 2, device.height / 2, 500);
-  sleep(2000);
+  if (config.enablePassword) {
+    sleep(1000);
+    //上滑手势，进入输入密码界面（如果你的手机手势不是上滑，可能需要其他办法）
+    swipe(device.width / 2, device.height - 100, device.width / 2, device.height / 2, 500);
+    sleep(1000);
+    //这里通过遍历上方输入密码的数组，来依次点击对应按钮输入密码
+    for (let i = 0; i < password.length; i++) {
+      let p = password[i].toString();
+      desc(p).findOne().click();
+      sleep(200);
+    }
+    sleep(2000);
+  }
   openApp();
 }
 
@@ -50,8 +83,11 @@ function findUser() {
 function sendMessage() {
     var content = ""; //内容
     var from = ""; //出处
-    //这里发送的消息的内容是通过hitokoto的api接口，获得不重复的随机的名人名言
-    var res = http.get("https://v1.hitokoto.cn/");
+    // 随机选择一言分类: i (诗词), j (网易云), k (哲学)
+    var types = ["i", "j", "k"];
+    var randomType = types[Math.floor(Math.random() * types.length)];
+    // 这里发送的消息的内容是通过hitokoto的api接口，获得不重复的随机名言（诗词/网易云/哲学）
+    var res = http.get("https://v1.hitokoto.cn/?c=" + randomType);
     if (res.statusCode == 200) {
         var data = res.body.json();
         content = data.hitokoto;
@@ -62,7 +98,7 @@ function sendMessage() {
     }
     sleep(100);
     //发送续火花提示
-    setText(`正在尝试自动续火花`);
+    setText(config.sparkMessage);
     sleep(100);
     //点击发送的按钮
     id("send_btn").findOne().click();
@@ -90,20 +126,22 @@ function sendMessage() {
     swipe(device.width / 2, device.height - 320, device.width / 2, device.height + 8000, 500);
     sleep(1000);
     //自动点击续火花表情
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < config.sparkClickCount; i++) {
         id("emotion_name").className("android.widget.TextView").text("续火花").findOne().parent().click();
-        sleep(500);
+        sleep(config.sparkClickInterval);
     }
     //发送续火花消息
     sleep(1000);
     id("send_btn").findOne().click();
     sleep(1000);
     //发送今日一言
-    setText(`今日一言:“${content} —— ${from}”`);
-    sleep(1000);
-    //点击发送的按钮
-    id("send_btn").findOne().click();
-    sleep(1000);
+    if (config.enableHitokoto) {
+        setText(`今日一言:"${content} —— ${from}"`);
+        sleep(1000);
+        //点击发送的按钮
+        id("send_btn").findOne().click();
+        sleep(1000);
+    }
     //获取续火花用时
     let runTime = new Date().getTime() - startTime;
     sleep(1000);
@@ -111,11 +149,13 @@ function sendMessage() {
     let milliseconds = runTime; // 直接赋值
     let seconds = milliseconds / 1000; // 转换为秒
     //输出用时
-    setText(`续火花完成,总耗时: ${seconds}秒`);
-    sleep(1000);
-    //点击发送的按钮
-    id("send_btn").findOne().click();
-    sleep(1000);
+    if (config.enableTimeOutput) {
+        setText(`续火花完成,总耗时: ${seconds}秒`);
+        sleep(1000);
+        //点击发送的按钮
+        id("send_btn").findOne().click();
+        sleep(1000);
+    }
     back();
 }
 
@@ -137,3 +177,13 @@ function killapp() {
 }
 //立即调用函数调用链的第一个函数，使程序运行
 unlockScreen();
+//根据配置执行息屏操作
+if (config.enableAutoSleep) {
+    if (config.sleepMode === "root") {
+        //使用root权限执行电源按键操作进行熄屏
+        Power();
+    } else if (config.sleepMode === "shizuku") {
+        //使用shizuku权限执行电源按键操作进行熄屏
+        shizuku(`input keyevent ${KeyEvent.KEYCODE_POWER}`);
+    }
+}
